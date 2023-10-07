@@ -1,0 +1,6 @@
+1. Any program syntext copy 
+2. Go https://snippet-generator.app/
+3. Past you copy_text and copy snipped code
+
+4.Go VS_Code setting "User Snippet" and search "c.json" file
+6. and past here.
