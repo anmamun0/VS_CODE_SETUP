@@ -4,3 +4,7 @@
 
 4.Go VS_Code setting "User Snippet" and search "c.json" file
 6. and past here.
+
+
+
+// for space = 	  "    $0",
