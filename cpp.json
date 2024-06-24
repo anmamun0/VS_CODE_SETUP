@@ -1,0 +1,106 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"1": {
+		"prefix": "c++lang",
+		"body": [  
+		  "#include <bits/stdc++.h>",
+		  "#include<ext/pb_ds/assoc_container.hpp>",
+		  "#include<ext/pb_ds/tree_policy.hpp>",
+		  "using namespace __gnu_pbds;",
+		  "using namespace std;",
+		  "template <typename T> ",
+		  "using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;",
+		  "typedef long long ll;", 
+		  "#define str string",
+		  "#define X first",
+		  "#define Y second",
+		  "#define pb push_back",
+		  "#define all(x) x.begin(),x.end() ", 
+		  "#define checkmate return 0;",
+		  "#define in_range(i, x, y) for (int _s=x, _e=y, _dir=(y>x)?1:-1, i=_s;((_dir==1)?(i<=_e):(i>=_e)); i+=_dir)", 
+		  "template <typename... DataIn> void input(DataIn&... val){(cin >> ... >> val);}",
+		  "template <typename... DataOut> void print(const DataOut&... val){((cout << val), ...);} ",
+		  "namespace AN{void yes() { print(\"YES\\n\");} void no(){print(\"NO\\n\");} void enter() {print(\"\\n\");} char ln='\\n';",
+		  "    template<typename Q> inline void Erase_duplicate(vector<Q>& v) { sort(all(v)); v.erase(unique(all(v)),v.end());}}",
+		  "// Operator overloads",
+		  "template <typename T1, typename T2> istream &operator>>(istream &is, pair<T1,T2> &p) {return (is>>p.X>>p.Y);}",
+		  "template<typename T> istream& operator>>(istream &is, vector<T> &v) { for (auto &c:v) input(c);return is;}",
+		  "template<typename T1, typename T2> ostream& operator<<(ostream &os , const pair<T1,T2> &p) {return (os<<p.X <<\" \"<<p.Y);}",
+		  "template<typename T> ostream& operator<<(ostream &os ,const vector<T> &v) { for(const auto &c:v){ print(c,\" \");}print(\"\\n\"); return os;}",
+		  "using namespace AN;",
+		  "", 
+		  "int main()",
+		  "{",
+		  "  /* _Coder   : anmamun0",
+		  "     _Created : ${CURRENT_DATE} ${CURRENT_MONTH_NAME} ${CURRENT_YEAR} ||  ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+		  "     _File    : ${TM_FILENAME} ", 
+		  "    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ */",
+		  "    ios::sync_with_stdio(false);",
+		  "    cin.tie(NULL);",
+		  "",
+		  "    $0",
+		  "",
+		  "    checkmate;",
+		  "}",
+		],
+		"description": ""
+	  },
+	"3": {
+		"prefix": "Node",
+		"body": [
+		  "class Node",
+		  "{",
+		  "    public:",
+		  "        int val;",
+		  "        Node *next;",
+		  "",
+		  "        Node(int val)",
+		  "        {",
+		  "            this->val = val;",
+		  "            this->next = NULL;",
+		  "        }",
+		  "};"
+		],
+		"description": ""
+	  }  ,
+
+	  "4": {
+		"prefix": "BNode",
+		"body": [
+		  "class Node",
+		  "{",
+		  "public:",
+		  "    int val;",
+		  "    Node *left;",
+		  "    Node *right;",
+		  "    Node(int val)",
+		  "    {",
+		  "        this->val = val;",
+		  "        this->left = NULL;",
+		  "        this->right = NULL;",
+		  "    }",
+		  "};"
+		],
+		"description": ""
+	  },
+	  "5": {
+		"prefix": "sloved",
+		"body": [
+		  "// _Problem Sloved : ${CURRENT_DATE} ${CURRENT_MONTH_NAME} ${CURRENT_YEAR} ||  ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+		],
+		"description": ""
+	  },
+	  
+}
