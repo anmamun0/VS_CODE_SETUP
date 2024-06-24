@@ -28,7 +28,7 @@
 		  "#define Y second",
 		  "#define pb push_back",
 		  "#define all(x) x.begin(),x.end() ", 
-		  "#define checkmate return 0;",
+		  "#define checkmate return ",
 		  "#define in_range(i, x, y) for (int _s=x, _e=y, _dir=(y>x)?1:-1, i=_s;((_dir==1)?(i<=_e):(i>=_e)); i+=_dir)", 
 		  "template <typename... DataIn> void input(DataIn&... val){(cin >> ... >> val);}",
 		  "template <typename... DataOut> void print(const DataOut&... val){((cout << val), ...);} ",
@@ -52,7 +52,7 @@
 		  "",
 		  "    $0",
 		  "",
-		  "    checkmate;",
+		  "    checkmate 0;",
 		  "}",
 		],
 		"description": ""
