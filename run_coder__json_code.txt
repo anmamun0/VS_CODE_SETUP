@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Default Dark+",
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.cStandard": "c11",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -7,17 +6,37 @@
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.terminalRoot": "/",
     "code-runner.executorMapByGlob": {
+        
     
         "pom.xml": "cd $dir && mvn clean package"
     },
     "code-runner.executorMap": {
+      
+    
+
+
+
+
+
+    
+        
+
+    
+        
+
+
+
+
+
+
+    
 
         "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt timeout 10s < input.txt > output.txt",
         "zig": "zig run",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
-        "python": "python -u",
+        "python": "python -u < input.txt > output.txt",
         "perl": "perl",
         "perl6": "perl6",
         "ruby": "ruby",
@@ -63,11 +82,121 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "sml": "cd $dir && sml $fileName",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe timeout 10s < input.txt > output.txt",
+        // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
     },
-    
-    "window.zoomLevel": 0.3,
     "files.autoSave": "afterDelay",
+    "cph.general.defaultLanguage": "cpp",
+    "codesnap.showWindowTitle": true,
+    "editor.formatOnType": true,
+    "workbench.editorAssociations": {
+        "*.exe": "default"
+    },
+    "codesnap.backgroundColor": "#ccffff",
+    "code-runner.executorMapByFileExtension": {
+    
+
+
+    
+    
+        
+        ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+        ".vbs": "cscript //Nologo",
+        ".scala": "scala",
+        ".jl": "julia",
+        ".cr": "crystal",
+        ".ml": "ocaml",
+        ".zig": "zig run",
+        ".exs": "elixir",
+        ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        ".rkt": "racket",
+        ".scm": "csi -script",
+        ".ahk": "autohotkey",
+        ".au3": "autoit3",
+        ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+        ".kts": "kotlinc -script",
+        ".dart": "dart",
+        ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        ".hs": "runhaskell",
+        ".nim": "nim compile --verbosity:0 --hints:off --run",
+        ".csproj": "dotnet run --project",
+        ".fsproj": "dotnet run --project",
+        ".lisp": "sbcl --script",
+        ".kit": "kitc --run",
+        ".v": "v run",
+        ".vsh": "v run",
+        ".sass": "sass --style expanded",
+        ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        ".ring": "ring",
+        ".sml": "cd $dir && sml $fileName",
+        ".mojo": "mojo run"
+    },
+    "workbench.editor.enablePreview": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.fontVariations": false,
+    "workbench.sideBar.location": "right",
+    "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "code-runner.languageIdToFileExtensionMap": {
+
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    },
+    "emmet.preferences": {
+        
+    },
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.fontFamily": " Consolas, 'Courier New', monospace",
+    "json.schemas": [],
+    
+    // i changed that section
+    "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type", //class keyword
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "FireFly Pro Bright",
     
 }
 
